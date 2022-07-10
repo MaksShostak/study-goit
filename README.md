@@ -1,2 +1,2 @@
-# study-goit
-репозиторій для навчання в goit
+# goit-markup-hw-06
+home eork #6
