@@ -1088,9 +1088,8 @@ header {
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 28px;
+
   cursor: pointer;
-  border-radius: 4px;
-  border: none;
 
   text-align: center;
   font-family: inherit;
@@ -1098,10 +1097,11 @@ header {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: center;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   /* border-color: var(--accent-color); */
+
+  border: none;
   border-radius: 4px;
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1117,34 +1117,30 @@ header {
 
   color: #ffffff;
 }
-.subscription-btn {
-  display: flex;
-  position: relative;
-  color: #ffffff;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .subscription.button {
   display: flex;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-white-color);
 }
 .subscription-icon {
   cursor: pointer;
-  position: absolute;
-  top: 13px;
-  right: 28px;
   fill: currentColor;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscription-btn:focus .subscription.button,
-.subscription-btn:active .subscription.button,
-.subscription-btn:hover .subscription.button,
-.subscription-btn:hover .subscription-icon,
-.subscription-btn:focus .subscription-icon,
-.subscription-btn:active .subscription-icon {
+.sub-span {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscription.button:focus .sub-span,
+.subscription.button:active .sub-span,
+.subscription.button:hover .sub-span,
+.subscription.button:hover .subscription-icon,
+.subscription.button:focus .subscription-icon,
+.subscription.button:active .subscription-icon {
   color: rgba(255, 255, 255, 0.85);
 }
